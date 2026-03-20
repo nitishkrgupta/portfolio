@@ -1,0 +1,636 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #0f172a, #020617);
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 90px 5px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 4px;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(120deg, #142859, #020617, #142859);
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    color: #38bdf8;
+}
+.logo{
+    color:#07f7ff
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 90px;
+}
+
+/* LEFT */
+.left {
+    max-width: 500px;
+}
+
+.tagline {
+    color: #38bdf8;
+}
+
+/* .typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid white;
+    animation: typing 3s steps(25, end), blink 1s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+} */
+
+h1 {
+    font-size: 50px;
+    margin: 5px 0;
+}
+
+.desc {
+    color: #94a3b8;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 20px;
+    padding: auto;
+}
+.btn1{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 10px 0px 0px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+}
+.btn1:hover {
+    transform: scale(1.05);
+    background: #38bdf8;
+    color: black;
+}
+.btn2 {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 10px 0px 0px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+}
+.btn2:hover{
+    transform: scale(1.05);
+    background: #38bdf8;
+    color: black;
+}
+
+/* RIGHT IMAGE */
+/* .right img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid #38f855;
+    box-shadow: 0 0 25px #38bdf8;
+}
+.right img:hover{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 8px solid #38f855;
+    box-shadow: 0 0 30px #38bdf8; 
+    animation: rotateGlow 4s linear infinite;
+} */
+
+.right{
+    /* position: relative; */
+    width: 300px;
+    height: 300px;
+    padding-right: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right img:hover{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid #38f855;
+    box-shadow: 0 0 30px #38bdf8; 
+    /* animation: rotateGlow 4s linear infinite; */
+} 
+
+/* Gradient glow ring */
+.right::before {
+    content: "";
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #00ff1a, #7c3aed, #00f5ff);
+    z-index: -1;
+    filter: blur(10px);
+    animation: rotateGlow 4s linear infinite;
+    /* box-shadow: 0 0 25px #38bdf8, 0 0 50px #7c3aed; */
+}
+
+/* Profile image */
+.right img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #020617;
+}
+/* ABOUT SECTION */
+.about {
+    padding: 80px 50px;
+    background: #020617;
+}
+
+/* CONTAINER */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.edu-card {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    max-width: 350px;
+}
+
+.edu-card h3 {
+    margin: 0;
+}
+
+.college {
+    color: #38bdf8;
+    margin: 5px 0;
+}
+
+.college-name {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.date {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.edu-desc {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* RIGHT CONTENT */
+.about-right {
+    max-width: 600px;
+    text-align: justify;
+}
+
+.about-right h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.about-right p {
+    color: #94a3b8;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* SKILLS */
+.skills {
+    margin: 20px 0;
+}
+
+.skills span {
+    display: inline-block;
+    background: #0f172a;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 14px;
+    border: 1px solid #38bdf8;
+}
+
+/* BUTTON */
+.about-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background: #38bdf8;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+.skills span:hover {
+    background: #38bdf8;
+    color: black;
+    transition: 0.3s;
+}
+
+.exp-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 60px 10px;
+    background: #020617;
+    color: white;
+}
+
+/* LEFT */
+.skills {
+    width: 45%;
+}
+
+.skills h2 {
+    margin-bottom: 30px;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* TAGS */
+.tags span {
+    display: inline-block;
+    background: #0f172a;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 14px;
+    color: #38bdf8;
+}
+
+/* RIGHT */
+.experience {
+    width: 40%;
+    margin-top: 25px;
+    margin-right: 20px;
+    padding: 0px 20px 0px 0px;
+}
+
+.experience h2 {
+    margin-bottom: 30px;
+}
+
+/* ITEM */
+.item {
+    /* position: relative; */
+    margin-bottom: 30px;
+}
+
+/* CONTENT */
+.content h3 {
+    margin: 0;
+}
+
+.company {
+    color: #38bdf8;
+    font-size: 14px;
+}
+
+.content p {
+    color: #94a3b8;
+    font-size: 14px;
+    text-align: justify;
+}
+.head{
+    margin-top: 30px;
+    padding: 30px;
+}
+.head > h2, .head > p{
+    text-align: center;
+}
+
+.projects{
+    margin: 30px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #0f172a;
+}
+.project-card{
+    width: 300px;
+    border: 1px solid gray;
+    padding: 15px;
+    background-color: #0f172a;
+    transition: 0.3s;
+    text-align: center;
+}
+.project-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+.project-card img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.project-card h3{
+    margin: 10px 0;
+}
+.project-card p{
+    font-size: 0.9rem;
+    text-align: justify;
+}
+.tech{
+    margin-top: 10px;
+}
+
+.tech span{
+    display: inline-block;
+    background: #0f172a;
+    border: 1px solid #38bdf8;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 4px;
+    font-size: 0.8rem;
+    color: #38bdf8;
+}
+.tech span:hover {
+    background: #38bdf8;
+    color: black;
+    transition: 0.3s;
+}
+.project-links{
+    margin-top: 10px;
+}
+
+.project-links a{
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 12px;
+    text-decoration: none;
+    border: 1px solid #38bdf8;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #00f5ff;
+}
+
+.project-links a:hover{
+    background: black;
+    color: white;
+}
+
+.certifications {
+    padding: 80px 50px;
+    background: #020617;
+    color: white;
+}
+
+.certifications h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* GRID */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+.cert-card {
+    background: linear-gradient(135deg, #0f172a, #020617);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+}
+
+/* TEXT */
+.cert-card h3 {
+    margin: 0 0 10px;
+}
+
+.org {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 15px;
+}
+
+.buttons button {
+    background: transparent;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.buttons > a{
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.buttons > a:hover{
+    transform: scale(1.05);
+    background: #38bdf8;
+    color: black;
+
+}
+
+.buttons button:hover {
+    background: #38bdf8;
+    color: black;
+}
+.cert-card {
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.1);
+}
+
+.contact {
+    text-align: center;
+    padding: 80px 20px;
+    background: #020617;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 32px;
+}
+
+.subtitle {
+    color: #94a3b8;
+    margin-bottom: 40px;
+}
+
+/* FORM */
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* ROW */
+.row {
+    display: flex;
+    gap: 50px;
+}
+
+/* INPUT */
+.input-box {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #1e293b;
+    background: #020617;
+    color: white;
+}
+
+textarea {
+    height: 120px;
+}
+
+/* BUTTON */
+.send-btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #38bdf8, #a855f7);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+
+.footer{
+    text-align: center;
+}
+.footer>a{
+    margin: 0px 6px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.footer>a:hover{
+    transform: scale(1.4);
+    color: green;
+}
+
+/* Animation */
+@keyframes rotateGlow {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 768px){
+    nav{
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 20px;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-left img {
+        width: 200px;
+    }
+    .exp-section{
+        flex-direction: column;
+        text-align: center;
+    }
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
