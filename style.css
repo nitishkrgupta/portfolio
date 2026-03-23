@@ -24,7 +24,7 @@ nav ul {
     display: flex;
     gap: 20px;
     list-style: none;
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 nav a {
@@ -497,6 +497,9 @@ h1 {
 .cert-card {
     box-shadow: 0 0 15px rgba(56, 189, 248, 0.1);
 }
+.buttons > p{
+    text-align: justify;
+}
 
 .contact {
     text-align: center;
@@ -601,10 +604,17 @@ textarea {
     }
 }
 @media (max-width: 768px){
+    body {
+        overflow-x: hidden;
+    }
     nav{
         flex-direction: column;
         text-align: center;
-        padding: 10px 20px;
+        padding: 10px 8px;
+    }
+    nav a {
+        display: block;
+        margin: 4px 0;
     }
     .hero{
         flex-direction: column-reverse;
@@ -621,6 +631,7 @@ textarea {
     .exp-section{
         flex-direction: column;
         text-align: center;
+        width: 800px;
     }
     .cert-grid {
         grid-template-columns: 1fr;
