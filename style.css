@@ -633,6 +633,8 @@ textarea {
 @media (max-width: 768px){
     body {
         overflow-x: hidden;
+        flex-direction: column;
+        text-align: center;
     }
     nav{
         flex-direction: column;
