@@ -78,6 +78,13 @@ h1 {
 
 .desc {
     color: #94a3b8;
+    text-align: justify;
+}
+.exploring {
+    margin-top: 10px;
+    color: #00adb5;
+    font-size: 14px;
+    text-align: justify;
 }
 
 /* BUTTONS */
@@ -334,10 +341,24 @@ h1 {
     font-size: 14px;
 }
 
-.content p {
+.content li{
     color: #94a3b8;
-    font-size: 14px;
+    font-size: 16px;
     text-align: justify;
+}
+.content > a{
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 12px;
+    text-decoration: none;
+    border: 1px solid #38bdf8;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #00f5ff;
+}
+.content a:hover{
+    background: black;
+    color: white;
 }
 .head{
     margin-top: 30px;
@@ -443,7 +464,13 @@ h1 {
     border-radius: 15px;
     border: 1px solid rgba(255,255,255,0.1);
     transition: 0.3s;
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.5;
+    /* font-style: italic;
+    color: #bbb; */
 }
+
 
 .cert-card:hover {
     transform: translateY(-5px);
