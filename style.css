@@ -183,8 +183,9 @@ h1 {
 }
 /* ABOUT SECTION */
 .about {
-    padding: 80px 50px;
+    padding: 60px 50px;
     background: #020617;
+    text-align: center;
 }
 
 /* CONTAINER */
@@ -632,18 +633,17 @@ textarea {
 }
 @media (max-width: 768px){
     body {
-        overflow-x: hidden;
-        flex-direction: column;
-        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
     }
     nav{
         flex-direction: column;
         text-align: center;
-        padding: 10px 8px;
+        padding: 4px 90px;
     }
     nav a {
         display: block;
-        margin: 4px 0;
+        margin: 4px 4px;
     }
     .hero{
         flex-direction: column-reverse;
@@ -657,10 +657,10 @@ textarea {
     .about-left img {
         width: 200px;
     }
-    .exp-section{
-        flex-direction: column;
+    .skills{
+        display: grid;
+        grid-template-columns: 2fr;
         text-align: center;
-        width: 800px;
     }
     .cert-grid {
         grid-template-columns: 1fr;
@@ -674,3 +674,26 @@ textarea {
     }
 }
 
+@media (max-width:320px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    nav{
+        flex-direction: column;
+        text-align: center;
+        padding: 5px 10px 0px 10px;
+    }
+    nav ul{
+        padding: 5px 0px 0px 10px;
+    }
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .skills{
+        display: grid;
+        grid-template-columns: 2fr;
+        text-align: center;
+    }
+    
+}
